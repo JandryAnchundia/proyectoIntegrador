@@ -1,0 +1,15 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.informacion{
+
+    padding-top: 5rem ;
+    &__contenido{
+        max-width: 65rem;
+        margin: 0 auto;
+    }
+
+    &__parrafo{
+        text-align: center;
+    }
+}
