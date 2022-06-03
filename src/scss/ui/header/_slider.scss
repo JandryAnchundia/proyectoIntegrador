@@ -1,0 +1,80 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.slider{
+
+    overflow: hidden;
+    position: relative;
+   
+
+    &__slide{
+       
+        height: 100%;
+        flex-shrink: 0;
+        width: 100%;
+        position: relative;
+        transition-property: transform;  
+    }
+
+    &__imagen1, 
+    &__imagen2,
+    &__imagen3{
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height:30rem ;
+
+        @include m.tablet{
+            min-height: 60rem;
+        }
+
+    }
+
+    &__imagen1{
+        background-image: url(../img/header.svg);
+      
+    }
+
+
+    &__imagen2{
+        background-image: url(../img/header.svg);
+
+    }
+
+    &__imagen3{
+        background-image: url(../img/header.svg);
+        
+    }
+
+    &__contenido{
+        max-width: 50rem;
+        margin: auto;
+        transform: translateY(3rem);
+        text-align: center;
+
+
+        @include m.tablet{
+            width: 70rem;
+            margin: auto;
+            transform: translateY(35rem);
+            text-align: center;
+        }
+       
+
+    }
+
+    &__heading{
+        color: v.$blanco;
+
+    }
+
+    &__texto{
+        color: v.$blanco;
+       
+
+    }
+
+
+
+}

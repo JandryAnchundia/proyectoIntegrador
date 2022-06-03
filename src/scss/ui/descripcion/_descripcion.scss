@@ -1,0 +1,71 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.informacion{
+
+    color: black;
+
+    padding-top: 5rem ;
+    &__contenido{
+        max-width: 65rem;
+        margin: 0 auto;
+    }
+
+    &__parrafo{
+        text-align: center;
+    }
+}
+
+
+
+.descripcion{
+   
+
+   
+    max-width: 120rem;
+    margin: auto;
+
+    @include m.tablet{
+        padding: 10rem;
+    }
+
+    &__heading{
+        color: v.$blanco;
+        text-align: center; 
+       
+    }
+
+    .contenido{
+    
+        &__heading{
+            font-style: normal;
+            font-size: 7rem; 
+    
+        }
+    
+        &__parrafo{
+            color: black;
+            font-style: normal;
+            font-size: 3rem;
+            padding: 0;
+            margin: 0;
+            line-height: 0;     
+        }
+
+    }
+
+    .typed-cursor-{
+       display: none;
+    }
+
+    
+}
+
+
+
+
+
+.contenido__heading{
+    color: black;
+}
+
