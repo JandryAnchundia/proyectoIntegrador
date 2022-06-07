@@ -1,0 +1,68 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+.nosotros{
+    margin-bottom: 5rem;
+
+    
+    &__heading{
+        margin: 0 0 2rem 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 3rem;
+      
+        
+        
+        
+    }
+
+    &__grid{
+
+        @include m.tablet{
+            
+            @include m.grid(2, 0rem);
+        }
+    } 
+}
+
+
+.nosotro{
+    text-align: center;
+
+
+    padding: 10rem 5rem;
+    &--mision, 
+    &--vision{
+        
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+ 
+
+    &--mision{
+        background-image: url(../img/mision-nosotro.jpg);
+    }
+
+    &--vision{
+        background-image: url(../img/vision-nosotro.jpg);
+       
+    }
+
+    &__heading{
+        color: v.$blanco;
+        text-transform: uppercase;
+        font-size: 3rem;
+
+        
+    }
+
+    &__texto{
+        color: v.$blanco;
+        font-size: 1.8rem;
+
+    }
+}
+

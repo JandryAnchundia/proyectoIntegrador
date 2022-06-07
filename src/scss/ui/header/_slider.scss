@@ -26,7 +26,7 @@
         min-height:30rem ;
 
         @include m.tablet{
-            min-height: 60rem;
+            min-height: 45rem;
         }
 
     }
@@ -55,9 +55,9 @@
 
 
         @include m.tablet{
-            width: 70rem;
+            min-width: 75rem;
             margin: auto;
-            transform: translateY(35rem);
+            transform: translateY(15rem);
             text-align: center;
         }
        
@@ -66,12 +66,17 @@
 
     &__heading{
         color: v.$blanco;
+        text-transform: uppercase;
+        font-size: 3rem;
+        margin: 0;
+        
 
     }
 
     &__texto{
         color: v.$blanco;
-       
+        font-size: 1.8rem;
+        margin: 0;
 
     }
 

@@ -1,7 +1,44 @@
 @use 'base/mixins' as m;
 @use 'base/variables' as v;
 
-.informacion{
+
+
+
+.descripcion{
+    height: 25rem;
+    text-align: center;
+    max-width: 75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+
+}
+
+
+.contenido{
+    &__parrafo{
+        font-size: 2.5rem;
+        font-style: normal;
+        color: v.$negroClaro;
+    }
+
+    &__heading{
+        text-transform: uppercase;
+        font-size: 4rem;
+        font-style: normal;
+        color: v.$negro;
+
+    }
+}
+
+.typed-cursor-{
+    display: none;
+ }
+
+
+/* .informacion{
 
     color: black;
 
@@ -54,9 +91,7 @@
 
     }
 
-    .typed-cursor-{
-       display: none;
-    }
+    
 
     
 }
@@ -67,5 +102,5 @@
 
 .contenido__heading{
     color: black;
-}
+} */
 

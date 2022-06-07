@@ -11,7 +11,7 @@ html {
 body {
     font-family: v.$fuentePrincipal;
     font-size: 1.6rem;
-    background-color: darken(v.$grisClaro, 3%);
+    background-color: v.$blanco;
 }
 .contenedor {
     width: 95%;
