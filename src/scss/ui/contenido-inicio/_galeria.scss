@@ -1,9 +1,15 @@
 /** Galeria */
 
 .galeria {
+    &__heading{
+        font-size: 5rem;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    min-height: 75rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
 }
 @media (min-width: 768px) { 
     .galeria {

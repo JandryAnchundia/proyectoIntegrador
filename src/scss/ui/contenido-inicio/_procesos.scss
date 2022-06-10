@@ -4,14 +4,23 @@
 
 .mt-5 {
     margin-top: 5rem;
+    
 }
 
 .proceso {
+
+    &__heading{
+        font-size: 5rem;
+        text-align: center;
+        text-transform: capitalize;
+    }
+   
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     background-repeat: no-repeat;
     background-position: bottom center;
     margin-bottom: 5rem;
+    
 }
 
 .proceso:last-of-type {
@@ -31,6 +40,8 @@
 
 .basico {
     background-image: url(../img/header.svg);
+    background-size: cover;
+
 }
 @media (min-width: 768px) { 
     .basico {
@@ -43,6 +54,7 @@
 }
 .premier {
     background-image: url(../img/header.svg);
+    background-size: cover;
 }
 @media (min-width: 768px) { 
     .premier {
@@ -55,6 +67,7 @@
 }
 .elite {
     background-image: url(../img/header.svg);
+    background-size: cover;
 }
 
 @media (min-width: 768px) { 
