@@ -5,7 +5,7 @@
 
 
 .descripcion{
-    height: 25rem;
+    height: 25.3rem;
     text-align: center;
     max-width: 75rem;
     display: flex;
@@ -21,7 +21,9 @@
     &__parrafo{
         font-size: 2.4rem;
         font-style: normal;
-        color: v.$negroClaro;
+        color: v.$negro;
+        font-family: v.$fuenteTerciaria;
+       
     }
 
     &__heading{
@@ -29,6 +31,8 @@
         font-size: 5.4rem;
         font-style: normal;
         color: v.$negro;
+        font-family: v.$fuenteTerciaria;
+        font-weight: 900;
 
     }
 }

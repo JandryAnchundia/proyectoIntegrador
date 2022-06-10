@@ -32,7 +32,7 @@
     }
 
     &__imagen1{
-        background-image: url(../img/header.svg);
+        background-image: url(../img/docencia.svg);
       
     }
 
@@ -43,7 +43,8 @@
     }
 
     &__imagen3{
-        background-image: url(../img/header.svg);
+        background-image: url(../img/vinculacion.svg);
+        background-position: center -145px;
         
     }
 
@@ -69,6 +70,8 @@
         color: v.$blanco;
         text-transform: capitalize;
         font-size: 5rem;
+        font-family: v.$fuenteTerciaria;
+        font-weight: bold;
         margin: 0;
         
 
@@ -78,9 +81,27 @@
         color: v.$blanco;
         font-size: 1.8rem;
         margin: 0;
+        font-family: v.$fuenteTerciaria;
 
     }
-
-
-
 }
+
+/* Esto es lo que compete al slider Siguiente. Puntero */
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+
+    color: v.$blanco;
+    opacity: .8;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    color: v.$blanco;
+    opacity: .8;
+}
+
+.swiper-pagination-bullet-active{
+
+   background-color: v.$blanco;
+   opacity: 0.8;
+}
+
