@@ -10,7 +10,7 @@
         font-family: v.$fuenteTerciaria;
         font-weight: 900;
     }
-    min-height: 75rem;
+    min-height: 100rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -21,6 +21,7 @@
     }
 }
 .galeria img {
+    
     object-fit: cover;
     height: 100%;
 }

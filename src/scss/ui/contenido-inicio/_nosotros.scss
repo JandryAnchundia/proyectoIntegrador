@@ -15,8 +15,11 @@
 }
 
 
+/* Aqui va el nosotros de Inicio */
+  
 .nosotro{
     text-align: center;
+   
 
 
     padding: 10rem 5rem;
@@ -26,17 +29,19 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        
     }
 
- 
-
     &--mision{
-        background-image: url(../img/mision-nosotro.jpg);
+        background-image: url(../img/mision-nosotro.jpg); 
+      
+
+            
     }
 
     &--vision{
         background-image: url(../img/vision-nosotro.jpg);
-       
+        background-position: top ;
     }
 
     &__heading{

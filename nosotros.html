@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real State</title>
+    <title>Universidad ULEAM</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stoke&display=swap" rel="stylesheet">
+
+
+
+    <!-- Estas no tocar -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="build/css/app.css">
 </head>
@@ -17,56 +27,39 @@
 
         <div class="header__barra contenedor">
 
-            <div class="header__logo">
-                <img src="build/img/logo_uleam.png" alt="">
-            </div>
+            <a href="index.html">
+                <div class="header__logo">
+                    <img src="build/img/logo_uleam.png" alt="">
+                </div>
+            </a>
+
+           
 
             <nav class="navegacion">
-                <a class="navegacion__link" href="#">Inicio</a>
-                <a class="navegacion__link" href="#">Sobre Nosotros</a>
+                <a class="navegacion__link" href="index.html">Inicio</a>
+                <a class="navegacion__link" href="nosotros.html">Nosotros</a>
                 <a class="navegacion__link" href="#">Contacto</a>
                 <a class="navegacion__link"href="#">Blog</a>
             </nav>
         </div>
 
 
-        <div class="slider">
-            <div class="slider__contenedor ">       
-                <div class="slider__slide slider__imagen1">
+        <div class="header__imagen">
 
+            <div class="header__contenido">
 
-                    <div class="slider__contenido">
+                <h2>
+                    <span class="typed"></span>                  
+                </h2>
+                
+                <div class="contenido" id="cadenas-texto">     
+                    <p class="contenido__parrafo"> <i class="contenido__heading-nosotros">Sobre Nostros </i> <br> <i class="contenido__parrafo--informacion-nosotros">Conoce acerca de nuestra trayectoria como Institución de Educacion Superior</i>  </p>               
+                </div> 
 
-                        <h2  class="slider__heading">Docencia</h2>
-
-                        <p class="slider__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, adipisci porro! Beatae recusandae repudiandae sint, in officia natus? Quam animi voluptas minus optio nobis temporibus magni porro aliquam facilis molestiae?</p>
-
-                    </div>
-                   
-                </div>
-
-                <div class="slider__slide  slider__imagen2">        
-                    <div class="slider__contenido">
-
-                        <h2  class="slider__heading">Practicas</h2>
-
-                        <p class="slider__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, adipisci porro! Beatae recusandae repudiandae sint, in officia natus? Quam animi voluptas minus optio nobis temporibus magni porro aliquam facilis molestiae?</p>
-
-                    </div>        
-                </div>
-
-
-                <div class="slider__slide slider__imagen3">        
-                    <div class="slider__contenido">
-
-                        <h2  class="slider__heading">Vinculacion</h2>
-
-                        <p class="slider__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, adipisci porro! Beatae recusandae repudiandae sint, in officia natus? Quam animi voluptas minus optio nobis temporibus magni porro aliquam facilis molestiae?</p>
-
-                    </div>        
-                </div>
             </div>
+
         </div>
+            
 
     </header>
 
@@ -74,21 +67,13 @@
 
 
     
-    <section class="descripcion contenedor">
-                       
-        <h2>
-            <span class="typed"></span>                  
-        </h2>
+    <section class="lema contenedor">
+
+        <div class="lema__contenido">
+            <h2 class="lema__heading">Nuestro Lema:</h2>
+            <p class="lema__uleam">	"No dejes para mañana lo que puedes hacer hoy" </p>
+        </div>
         
-        <div class="contenido" id="cadenas-texto">
-
-            <p class="contenido__parrafo"> <i class="contenido__heading">¡Conócenos!</i> <br>    <i class="contenido__parrafo">En la sesión "Nosotros" sabrás acerca de nuestros objetivos como Institución de Educacion Superior</i>   </p>
-
-            <p class="contenido__parrafo"> <i class="contenido__heading">¡Infórmate!</i> <br>    <i class="contenido__parrafo">En la sesión "Blog" se presentarán los procesos sustantivos que la ULEAM lleva a cabo junto a sus futuros profesionales. </i>   </p>
-
-            <p class="contenido__parrafo"> <i class="contenido__heading">¡Contáctanos!</i> <br>    <i class="contenido__parrafo">En la sesión "Contacto" encontrarás la ubicación de la Finca Tigrillo y además, podrás comunicarte directamente con nosotros.</i>   </p>
-            
-        </div> 
     </section>  
     
     
@@ -97,14 +82,35 @@
 
         <div class="nosotros__grid">
 
-            <div class="nosotro nosotro--mision">
-                <h2 class="nosotro__heading">Mision</h2>
-                <p class="nosotro__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fugit impedit, reiciendis atque iusto labore blanditiis numquam inventore soluta quam magni ea, omnis adipisci veritatis natus! Reiciendis vero saepe sunt?</p>
+            <div class="nosotro__mision">
+
+
+                <div class="nosotro__contenido-right">
+
+                    <div class="nosotro__descripcion-right">
+                        <h2 class="nosotro__heading-right">Misión</h2>
+                    <p class="nosotro__texto-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fugit impedit, reiciendis atque iusto labore blanditiis numquam inventore soluta quam magni ea, omnis adipisci veritatis natus! Reiciendis vero saepe sunt?</p>
+                    </div>
+                    
+                </div>
+
+                
+                
+                
+                
             </div>
 
-            <div class="nosotro nosotro--vision">
-                <h2 class="nosotro__heading">Mision</h2>
-                <p class="nosotro__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fugit impedit, reiciendis atque iusto labore blanditiis numquam inventore soluta quam magni ea, omnis adipisci veritatis natus! Reiciendis vero saepe sunt?</p>
+            <div class="nosotro__vision">
+
+                <div class="nosotro__contenido-left">
+
+
+                    <div class="nosotro__descripcion-left">
+                        <h2 class="nosotro__heading-left">Visión</h2>
+                        <p class="nosotro__texto-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fugit impedit, reiciendis atque iusto labore blanditiis numquam inventore soluta quam magni ea, omnis adipisci veritatis natus! Reiciendis vero saepe sunt?</p>
+                    </div>  
+                </div>
+      
             </div>
 
         </div>
@@ -113,11 +119,11 @@
 
 
     <main class="contenedor mt-5">
-        <h2>Procesos sustantivos</h2>
+        <h2 class="proceso__heading">Procesos sustantivos</h2>
 
         <div class="proceso basico">
             <div class="contenido-proceso">
-                <h3>Modelo Básico</h3>
+                <h3>Docencia</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, odit? Distinctio iure temporibus ab repellendus iste reiciendis accusantium nostrum, sit, cum accusamus omnis tempora facilis facere, pariatur ad repellat ex!</p>
                 <a href="#" class="btn">Más Información</a>
             </div>
@@ -125,7 +131,7 @@
 
         <div class="proceso premier">
             <div class="contenido-proceso">
-                <h3>Modelo Premier</h3>
+                <h3>Prácticas</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, odit? Distinctio iure temporibus ab repellendus iste reiciendis accusantium nostrum, sit, cum accusamus omnis tempora facilis facere, pariatur ad repellat ex!</p>
                 <a href="#" class="btn">Más Información</a>
             </div>
@@ -133,7 +139,7 @@
 
         <div class="proceso elite">
             <div class="contenido-proceso">
-                <h3>Modelo Elite</h3>
+                <h3>Vinculación</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, odit? Distinctio iure temporibus ab repellendus iste reiciendis accusantium nostrum, sit, cum accusamus omnis tempora facilis facere, pariatur ad repellat ex!</p>
                 <a href="#" class="btn">Más Información</a>
             </div>
@@ -144,45 +150,12 @@
 
 
 
-    <!-- Seccion de Galeria -->
+    
 
-    <section class="contenedor mt-5">
-        <h2>Galería</h2>
-
-        <div class="galeria">
-            <div class="imagen">
-                <img src="build/img/header.svg" alt="imagen galeria">
-            </div>
-
-            <div class="imagen">
-                <img src="build/img/header.svg" alt="imagen galeria">
-            </div>
-
-            <div class="imagen">
-                <img src="build/img/header.svg" alt="imagen galeria">
-            </div>
-
-            <div class="imagen">
-                <img src="build/img/header.svg" alt="imagen galeria">
-            </div>
-
-            <div class="imagen">
-                <img src="build/img/header.svg" alt="imagen galeria">
-            </div>
-
-            <div class="imagen">
-                <img src="build/img/header.svg" alt="imagen galeria">
-            </div>
-
-            <div class="imagen">
-                <img src="build/img/header.svg" alt="imagen galeria">
-            </div>
-        </div>
-    </section>
+   
 
 
     <footer class="footer">
-
         <div class="header__barra contenedor">
 
             <div class="header__logo">
@@ -198,18 +171,10 @@
         </div>
 
         <div class="footer__copyright">
-
             <p class="footer__texto">ULEAM © Copyright 2020, Todos los derechos reservados - Universidad Laica Eloy Alfaro de Manabí</p>
             <p class="footer__texto">Dirección: Av. Circunvalación - Vía a San Mateo</p>
             <p class="footer__texto">Manta - Manabí - Ecuador</p>
-
         </div>
-
-
-
-
-
-
     </footer>
 
 
@@ -230,7 +195,7 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/slider.js"></script>
-    <script src="js/escritura.js"></script>
+    <script src="js/escritura_nosotros.js"></script>
     
 </body>
 </html>

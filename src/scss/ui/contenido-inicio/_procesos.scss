@@ -22,6 +22,7 @@
     background-repeat: no-repeat;
     background-position: bottom center;
     margin-bottom: 5rem;
+    height: 55rem;
     
 }
 
@@ -41,13 +42,17 @@
 }
 
 .basico {
-    background-image: url(../img/header.svg);
+    background-image: url(../img/proceso_docencia.jpeg);
     background-size: cover;
+
+ 
+    
+    
 
 }
 @media (min-width: 768px) { 
     .basico {
-        background-position: top right;
+        background-position: center right;
     }
     .basico .contenido-proceso {
         grid-row: 2 / 3;
@@ -55,12 +60,15 @@
     }
 }
 .premier {
-    background-image: url(../img/header.svg);
-    background-size: cover;
+    background-image: url(../img/proceso_practica.jpeg);
+ 
+    
+
+    
 }
 @media (min-width: 768px) { 
     .premier {
-        background-position: top left;
+        background-position: center -50px;
     }
     .premier .contenido-proceso{
         grid-column: 2 / 3;
@@ -68,13 +76,16 @@
     }
 }
 .elite {
-    background-image: url(../img/header.svg);
+    background-image: url(../img/proceso_vinculacion.jpeg);
     background-size: cover;
+    
+  
+
 }
 
 @media (min-width: 768px) { 
     .elite {
-        background-position: top right;
+        background-position: bottom left;
     }
     .elite .contenido-proceso {
         padding: 2rem 2rem 2rem 0;
