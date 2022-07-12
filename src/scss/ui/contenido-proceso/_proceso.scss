@@ -1,0 +1,66 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header{
+
+    &__proceso{   
+        background-image:  linear-gradient(to bottom, hsla(0, 0%, 0%, 0.068),  hsla(0, 0%, 0%, 0.678) 100%),  url(../img/proceso-h.jpg);
+        background-repeat: no-repeat;
+        background-position:  center  bottom;
+        background-size: cover ;
+        padding: 12rem 0;
+        min-height: 49rem;
+    }
+        
+    &__proceso-contenido{
+        max-width: 80rem;
+        padding-left: 7rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+      
+    
+}
+
+
+
+
+
+.proceso-sustantivo {
+    margin-bottom: v.$separacion;
+    @include m.tablet { 
+        display: flex;
+        gap: v.$separacion;
+        align-items: center;
+    }
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &:nth-child(even) {
+        .texto {
+            order: -1;
+        }
+    }
+    .imagen,
+    .texto {
+        flex: 1;
+    }
+    .texto {
+        margin-top: 1rem;
+        h3 {
+            margin: 0;
+            text-align: left;
+            color: v.$primario;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 50%;
+                height: 5px;
+                background-color: v.$secundario ;
+            }
+        }
+    }
+}

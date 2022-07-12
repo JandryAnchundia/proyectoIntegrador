@@ -57,7 +57,12 @@
             background-image: url(../img/ejecutiva.png);
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: -10rem center;
+
+            @include m.tablet{
+                background-position: -10rem 5rem;
+            }
+
+            background-position: -10rem 3rem;
             display: block;
             width: 30rem;
             height: 40rem;

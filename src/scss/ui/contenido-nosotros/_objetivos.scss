@@ -1,0 +1,61 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.contenedor-aticle{
+
+    width: 65%;
+    margin: 0 auto;
+}
+
+.objetivos{
+
+    &__heading{
+        text-align: center;
+        font-size: 5rem;
+        font-family: v.$fuenteTerciaria;
+        
+
+    }
+
+    &__texto{
+        font-size: 1.8rem;
+        line-height: 2.5;
+        font-family: v.$fuenteTerciaria;
+    }
+
+}
+
+
+
+.historia{
+
+    &__heading{
+        text-align: center;
+        font-size: 5rem;
+        font-family: v.$fuenteTerciaria;
+    }
+    &__subheading{
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 700;
+        font-family: v.$fuenteTerciaria;
+    }
+
+    &__ley{
+        font-size: 1.8rem;
+        font-family: v.$fuenteTerciaria;
+        margin: 0 0 1rem;
+    }
+
+    &__texto{
+        line-height: 2;
+    }
+
+
+
+}
+
+
+
+
+
