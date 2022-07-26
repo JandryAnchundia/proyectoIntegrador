@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
 
+    <!-- Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap" rel="stylesheet">
 
 
@@ -67,9 +70,12 @@
 
 
     
-    <section class="lema contenedor">
+    <section class="lema contenedor" >
 
-        <div class="lema__contenido">
+        <div class="lema__contenido" data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="900">
             
             <p class="lema__uleam">	"No dejes para mañana <br>  </p>
 
@@ -80,11 +86,14 @@
     
     
     <!-- Seccion sobre nosotros -->
-    <section class="nosotros">
+    <section class="nosotros" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
 
         <div class="nosotros__grid">
 
-            <div class="nosotro__mision">
+            <div class="nosotro__mision"  data-aos="fade-right"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine">
 
 
                 <div class="nosotro__contenido-right">
@@ -102,7 +111,9 @@
                 
             </div>
 
-            <div class="nosotro__vision">
+            <div class="nosotro__vision"  data-aos="fade-left"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine">
 
                 <div class="nosotro__contenido-left">
 
@@ -125,12 +136,12 @@
 
         <div class="historia__encabezado">
 
-            <h2 class="historia__heading">Historia</h2>
-            <p class="historia__subheading">Universidad Laica “Eloy Alfaro” de Manabí – ULEAM</p>
-            <p class="historia__ley">Creada Ley No. 10 Reg Oficial.313 Noviembre 13 de 1985</p>
+            <h2 class="historia__heading" data-aos="zoom-in">Historia</h2>
+            <p class="historia__subheading" data-aos="zoom-in">Universidad Laica “Eloy Alfaro” de Manabí – ULEAM</p>
+            <p class="historia__ley" data-aos="zoom-in">Creada Ley No. 10 Reg Oficial.313 Noviembre 13 de 1985</p>
         </div>
 
-        <div class="historia__imagen">
+        <div class="historia__imagen" data-aos="fade-right">
             <img src="build/img/historia.jpg" alt="">
         </div>
 
@@ -173,12 +184,12 @@
 
     <article class="objetivos contenedor-aticle">
 
-        <h2 class="objetivos__heading">Objetivos</h2>
+        <h2 class="objetivos__heading" data-aos="zoom-in">Objetivos</h2>
 
 
 
 
-        <div class="historia__imagen">
+        <div class="historia__imagen"  data-aos="fade-left">
             <img src="build/img/objetivos.jpg" alt="">
         </div>
 
@@ -234,10 +245,10 @@
             </div>
 
             <nav class="navegacion">
-                <a class="navegacion__link" href="#">Inicio</a>
-                <a class="navegacion__link" href="#">Sobre Nosotros</a>
-                <a class="navegacion__link" href="#">Contacto</a>
-                <a class="navegacion__link"href="#">Actividades</a>
+                <a class="navegacion__link" href="index.html">Inicio</a>
+                <a class="navegacion__link" href="nosotros.html"> Nosotros</a>
+                <a class="navegacion__link" href="contacto.html">Contacto</a>
+                <a class="navegacion__link" href="proceso.html">Procesos</a>
             </nav>
         </div>
 
@@ -267,6 +278,11 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/slider.js"></script>
     <script src="js/escritura_nosotros.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     
 </body>
 </html>

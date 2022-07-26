@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universidad ULEAM</title>
+    <!-- Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--  Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
@@ -76,7 +79,7 @@
 
 
     
-    <section class="descripcion contenedor">
+    <section class="descripcion contenedor" >
                        
         <h2>
             <span class="typed"></span>                  
@@ -102,12 +105,16 @@
 
         <div class="nosotros__grid">
 
-            <div class="nosotro nosotro--mision">
+            <div class="nosotro nosotro--mision" data-aos="fade-right"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine">
                 <h2 class="nosotro__heading">Misión</h2>
                 <p class="nosotro__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fugit impedit, reiciendis atque iusto labore blanditiis numquam inventore soluta quam magni ea, omnis adipisci veritatis natus! Reiciendis vero saepe sunt?</p>
             </div>
 
-            <div class="nosotro nosotro--vision">
+            <div class="nosotro nosotro--vision" data-aos="fade-left"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine">
                 <h2 class="nosotro__heading">Visión</h2>
                 <p class="nosotro__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fugit impedit, reiciendis atque iusto labore blanditiis numquam inventore soluta quam magni ea, omnis adipisci veritatis natus! Reiciendis vero saepe sunt?</p>
             </div>
@@ -120,9 +127,9 @@
 
 
     <main class="contenedor mt-5">
-        <h2 class="proceso__heading">Procesos sustantivos</h2>
+        <h2 class="proceso__heading" data-aos="zoom-in">Procesos sustantivos</h2>
 
-        <div class="proceso basico">
+        <div class="proceso basico" data-aos="fade-right">
             <div class="contenido-proceso">
                 <h3>Docencia</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, odit? Distinctio iure temporibus ab repellendus iste reiciendis accusantium nostrum, sit, cum accusamus omnis tempora facilis facere, pariatur ad repellat ex!</p>
@@ -130,7 +137,7 @@
             </div>
         </div> <!--.modelo-->
 
-        <div class="proceso premier">
+        <div class="proceso premier" data-aos="fade-left">
             <div class="contenido-proceso">
                 <h3>Prácticas</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, odit? Distinctio iure temporibus ab repellendus iste reiciendis accusantium nostrum, sit, cum accusamus omnis tempora facilis facere, pariatur ad repellat ex!</p>
@@ -138,7 +145,7 @@
             </div>
         </div> <!--.modelo-->
 
-        <div class="proceso elite">
+        <div class="proceso elite" data-aos="fade-right">
             <div class="contenido-proceso">
                 <h3>Vinculación</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, odit? Distinctio iure temporibus ab repellendus iste reiciendis accusantium nostrum, sit, cum accusamus omnis tempora facilis facere, pariatur ad repellat ex!</p>
@@ -154,9 +161,10 @@
     <!-- Seccion de Galeria -->
 
     <section class="contenedor mt-5">
-        <h2 class="galeria__heading">Galería</h2>
+        <h2 class="galeria__heading" data-aos="zoom-in">Galería</h2>
 
-        <div class="galeria">
+        <div class="galeria" data-aos="fade-up"
+        data-aos-duration="8000">
             <div class="imagen">
                 <img src="build/img/img_6.jpeg" alt="imagen galeria">
             </div>
@@ -196,10 +204,10 @@
             </div>
 
             <nav class="navegacion">
-                <a class="navegacion__link" href="#">Inicio</a>
-                <a class="navegacion__link" href="#"> Nosotros</a>
-                <a class="navegacion__link" href="#">Contacto</a>
-                <a class="navegacion__link"href="#">Actividades</a>
+                <a class="navegacion__link" href="index.html">Inicio</a>
+                <a class="navegacion__link" href="nosotros.html"> Nosotros</a>
+                <a class="navegacion__link" href="contacto.html">Contacto</a>
+                <a class="navegacion__link" href="proceso.html">Procesos</a>
             </nav>
         </div>
 
@@ -229,6 +237,10 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/slider.js"></script>
     <script src="js/escritura.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     
 </body>
 </html>

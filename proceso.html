@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap" rel="stylesheet">
-
+   <!--  Animaciones -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
@@ -37,7 +38,7 @@
             <nav class="navegacion">
                 <a class="navegacion__link" href="index.html">Inicio</a>
                 <a class="navegacion__link" href="nosotros.html">Nosotros</a>
-                <a class="navegacion__link" href="#">Contacto</a>
+                <a class="navegacion__link" href="contacto.html">Contacto</a>
                 <a class="navegacion__link" href="proceso.html">Procesos</a>
             </nav>
         </div>
@@ -74,60 +75,70 @@
 
 
    
-   <main class="contenedor contenido-principal">
+   <main class="contenedor contenido-principal   main-proceso">
 
 
-    <div class="proceso-sustantivo">
+    <div class="proceso-sustantivo" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
         <div class="imagen">
-            <img src="build/img/proceso_1.jpg" alt="imagen proceso">
+            <img src="build/img/img_7.jpeg" alt="imagen proceso">
         </div>
 
         <div class="texto">
-            <h3>Granos de Café</h3>
+            <h3>Procesos</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos perferendis aspernatur possimus esse aliquid, similique labore numquam quasi repellat dolor quibusdam ipsum eius tempore fugiat fuga accusantium, voluptas neque commodi.</p>
         </div>
     </div>
 
-    <div class="proceso-sustantivo">
+    <div class="proceso-sustantivo" data-aos="fade-left"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
         <div class="imagen">
-            <img src="build/img/proceso_2.jpg" alt="imagen proceso">
+            <img src="build/img/img_7.jpeg" alt="imagen proceso">
         </div>
 
         <div class="texto">
-            <h3>Tostar el café</h3>
+            <h3>Procesos</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos perferendis aspernatur possimus esse aliquid, similique labore numquam quasi repellat dolor quibusdam ipsum eius tempore fugiat fuga accusantium, voluptas neque commodi.</p>
         </div>
     </div>
 
-    <div class="proceso-sustantivo">
+    <div class="proceso-sustantivo"  data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
         <div class="imagen">
-            <img src="build/img/proceso_3.jpg" alt="imagen proceso">
+            <img src="build/img/img_7.jpeg" alt="imagen proceso">
         </div>
 
         <div class="texto">
-            <h3>Empacar el Café</h3>
+            <h3>Procesos</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos perferendis aspernatur possimus esse aliquid, similique labore numquam quasi repellat dolor quibusdam ipsum eius tempore fugiat fuga accusantium, voluptas neque commodi.</p>
         </div>
     </div>
 
-    <div class="proceso-sustantivo">
+    <div class="proceso-sustantivo"  data-aos="fade-left"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
         <div class="imagen">
-            <img src="build/img/proceso_4.jpg" alt="imagen proceso">
+            <img src="build/img/img_7.jpeg" alt="imagen proceso">
         </div>
 
         <div class="texto">
-            <h3>Moler granos de café</h3>
+            <h3>Procesos</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos perferendis aspernatur possimus esse aliquid, similique labore numquam quasi repellat dolor quibusdam ipsum eius tempore fugiat fuga accusantium, voluptas neque commodi.</p>
         </div>
     </div>
 
-    <div class="proceso-sustantivo">
+    <div class="proceso-sustantivo"  data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
         <div class="imagen">
-            <img src="build/img/proceso_5.jpg" alt="imagen proceso">
+            <img src="build/img/img_7.jpeg" alt="imagen proceso">
         </div>
 
         <div class="texto">
-            <h3>Disfrutar una taza</h3>
+            <h3>Procesos</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos perferendis aspernatur possimus esse aliquid, similique labore numquam quasi repellat dolor quibusdam ipsum eius tempore fugiat fuga accusantium, voluptas neque commodi.</p>
         </div>
     </div>
@@ -147,10 +158,10 @@
             </div>
 
             <nav class="navegacion">
-                <a class="navegacion__link" href="#">Inicio</a>
-                <a class="navegacion__link" href="#">Nosotros</a>
-                <a class="navegacion__link" href="#">Contacto</a>
-                <a class="navegacion__link"href="#">Actividades</a>
+                <a class="navegacion__link" href="index.html">Inicio</a>
+                <a class="navegacion__link" href="nosotros.html"> Nosotros</a>
+                <a class="navegacion__link" href="contacto.html">Contacto</a>
+                <a class="navegacion__link" href="proceso.html">Procesos</a>
             </nav>
         </div>
 
@@ -180,6 +191,11 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/slider.js"></script>
     <script src="js/escritura_nosotros.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     
 </body>
 </html>
