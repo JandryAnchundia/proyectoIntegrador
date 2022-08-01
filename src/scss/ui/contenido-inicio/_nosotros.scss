@@ -2,7 +2,14 @@
 @use 'base/variables' as v;
 
 
+
+
 .nosotros{
+
+ 
+
+
+    
     
 
     &__grid{
@@ -19,6 +26,7 @@
   
 .nosotro{
     text-align: center;
+    
    
 
 
@@ -33,6 +41,8 @@
     }
 
     &--mision{
+        position: relative;
+        z-index: 1;
         background-image: url(../img/mision-nosotro.jpg); 
       
 

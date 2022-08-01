@@ -18,10 +18,12 @@
 
 
     &__contenido-right{
-
+       
         @include m.grid(3, 0rem);
+
     
         &::after{
+           
             content: '';
             background-image: url(../img/ejecutivo.png);
             background-size: cover;

@@ -347,6 +347,7 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
+  /*  border: 1px solid red; */
 }
 
 body {
@@ -656,6 +657,8 @@ p {
   background-repeat: no-repeat;
 }
 .nosotro--mision {
+  position: relative;
+  z-index: 1;
   background-image: url(../img/mision-nosotro.jpg);
 }
 .nosotro--vision {
@@ -674,6 +677,10 @@ p {
   color: #FFFFFF;
   font-size: 1.8rem;
   font-family: "Raleway", sans-serif;
+}
+
+.procesosSustantivos {
+  overflow: hidden;
 }
 
 .mt-5 {
