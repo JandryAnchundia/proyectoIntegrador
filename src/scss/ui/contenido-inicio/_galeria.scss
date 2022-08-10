@@ -4,13 +4,20 @@
 
 .galeria {
     &__heading{
-        font-size: 5rem;
+        font-size: 3.5rem;
         text-transform: capitalize;
         text-align: center;
         font-family: v.$fuenteTerciaria;
         font-weight: 900;
         margin-bottom: 5rem;
+
+
+        @include m.tablet{
+            font-size: 5rem;
+        }
     }
+
+
     min-height: 100rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);

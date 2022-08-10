@@ -19,27 +19,42 @@
 
 .contenido{
     &__parrafo{
-        font-size: 2.4rem;
+        font-size: 1.8rem;
         font-style: normal;
         color: v.$negro;
         font-family: v.$fuenteTerciaria;
 
+        @include m.tablet{
+            font-size: 2.4rem;
+    
+            }
+
         &--informacion{
             font-style: normal;
-            font-size: 5rem;
+            font-size: 2.6rem;
             color: lighten(v.$negro, .5%) ;
             font-family: v.$fuenteTerciaria;
+
+            @include m.tablet{
+                font-size: 5rem;
+        
+                }
         }
        
     }
 
     &__heading{
         text-transform: capitalize;
-        font-size: 5.4rem;
+        font-size: 3.5rem;
         font-style: normal;
         color: v.$negro;
         font-family: v.$fuenteTerciaria;
         font-weight: 900;
+
+        @include m.tablet{
+        font-size: 5rem;
+
+        }
 
     }
 }

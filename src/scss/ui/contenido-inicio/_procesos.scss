@@ -16,12 +16,18 @@
 .proceso {
 
     &__heading{
-        font-size: 5rem;
+        font-size: 3.5rem;
         font-family: v.$fuenteTerciaria;
         font-weight: 900;
         text-align: center;
         text-transform: capitalize;
-        margin-bottom: 5rem;
+      
+        margin-bottom: 0rem;
+
+        @include m.tablet{
+            font-size: 5rem;
+            margin-bottom: 5rem;
+        }
     }
    
     display: grid;
@@ -48,12 +54,15 @@
     background-color: v.$blanco;
 }
 
-.basico {
-    background-image: url(../img/proceso_docencia.jpeg);
-    background-size: cover;
-    background-attachment: fixed; 
 
-   
+
+
+
+.basico {
+    background-image: url(../imgOptimizadas/proceso_docencia.jpeg);
+    background-size: cover;
+    background-position: -100px 200px;
+    background-attachment: fixed; 
 
 }
 
@@ -70,8 +79,9 @@
     }
 }
 .premier {
-    background-image: url(../img/proceso_practica.jpeg);
+    background-image: url(../imgOptimizadas/proceso_practica.jpeg);
     background-attachment: fixed;
+    background-position: -150px 200px;
  
     
 
@@ -88,9 +98,10 @@
     }
 }
 .elite {
-    background-image: url(../img/proceso_vinculacion.jpeg);
+    background-image: url(../imgOptimizadas/proceso_vinculacion.jpeg);
     background-size: cover;
     background-attachment: fixed;
+    background-position: -100px 200px;
     
   
 

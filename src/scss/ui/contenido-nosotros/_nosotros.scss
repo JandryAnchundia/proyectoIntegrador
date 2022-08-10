@@ -3,41 +3,72 @@
 
 
 .nosotro{
+  
+    
+
+    
 
     padding: 10rem 5rem;
 
     &__mision{
         background-color: #121630;
+
+
+      
+        
+        
         
     }
 
     &__vision{
         background-color: #44434D;    
+    
     }
 
 
 
+  
+
+
+
     &__contenido-right{
-       
-        @include m.grid(3, 0rem);
+
+        padding: 4rem;
+        
+
+        @include m.tablet{
+            @include m.grid(3, 0rem);
+            padding: 0;
+        }
 
     
         &::after{
            
-            content: '';
-            background-image: url(../img/ejecutivo.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: 0rem center;
-            display: block;
-            width: 30rem;
-            height: 40rem;
-            grid-row: 1/1;
-            grid-column: 1/2;
-            
+          
 
-            margin: -10rem 0 0 0;
+
+            @include m.tablet{
+
+                content: '';
+                background-image: url(../imgOptimizadas/ejecutivo.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 0rem center;
+                display: block;
+                width: 30rem;
+                height: 40rem;
+                grid-row: 1/1;
+                grid-column: 1/2;
+                
+    
+                margin: -10rem 0 0 0;
+
+            }
         }
+
+
+
+
     }
 
     &__descripcion-right{
@@ -52,17 +83,25 @@
 
 
     &__contenido-left{
-        @include m.grid(3, 0rem);
+
+        padding: 4rem;
+        @include m.grid(2, 0rem);
+
+        @include m.tablet{
+
+            @include m.grid(3, 0rem);
+            padding: 0;
+            
+        }
 
         &::after{
-            content: '';
-            background-image: url(../img/ejecutiva.png);
-            background-repeat: no-repeat;
-            background-size: cover;
 
             @include m.tablet{
-                background-position: -10rem 5rem;
-            }
+
+            content: '';
+            background-image: url(../imgOptimizadas/ejecutiva.png);
+            background-repeat: no-repeat;
+            background-size: cover;
 
             background-position: -10rem 3rem;
             display: block;
@@ -72,6 +111,9 @@
             grid-column: 3/4;
 
             margin: -10rem 0 0 0rem;
+            }
+
+            
             
          
             
@@ -80,6 +122,7 @@
     }
 
     &__descripcion-left{
+        
         grid-column: 1/3;
         padding-left: 3rem;
         display: flex;
@@ -92,8 +135,36 @@
     &__texto-right{
         color: v.$blanco;
         font-family: v.$fuenteTerciaria;
+
+
+
         
     }
+
+
+    &__heading-right,
+    &__heading-left {
+        font-size: 2.5rem;
+
+        @include m.tablet{
+            font-size: 3.5rem;
+
+        }
+    }
+
+    &__texto-right, 
+    &__texto-left{ 
+        font-size: 1.4rem;
+        @include m.tablet{
+
+            font-size: 1.5rem;
+
+        }
+
+    }
+
+
+
 
     &__heading-left,
     &__texto-left{

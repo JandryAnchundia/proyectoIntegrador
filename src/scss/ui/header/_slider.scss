@@ -23,7 +23,7 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        min-height:30rem ;
+        min-height:45rem ;
 
         @include m.tablet{
             min-height: 45rem;
@@ -47,15 +47,30 @@
 
     &__imagen3{
         background-image: url(../img/vinculacion.svg);
-        background-position: center -150px;
+      
+
+
         
+    }
+
+    @include m.tablet{
+
+        &__imagen3{
+            background-image: url(../img/vinculacion.svg);
+            background-position: center -150px;
+    
+    
+            
+        }
+
     }
 
     &__contenido{
         max-width: 50rem;
         margin: auto;
-        transform: translateY(3rem);
+        transform: translateY(9rem);
         text-align: center;
+        padding: 5rem;
 
 
 
@@ -64,6 +79,7 @@
             margin: auto;
             transform: translateY(15rem);
             text-align: center;
+           
         }
        
 
@@ -72,19 +88,30 @@
     &__heading{
         color: v.$blanco;
         text-transform: capitalize;
-        font-size: 5rem;
+        font-size: 3.5rem;
         font-family: v.$fuenteTerciaria;
         font-weight: bold;
         margin: 0;
+
+        @include m.tablet{
+
+            font-size: 5rem;
+        }
         
 
     }
 
     &__texto{
         color: v.$blanco;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         margin: 0;
         font-family: v.$fuenteTerciaria;
+
+        @include m.tablet{
+
+            font-size: 1.8rem;
+        }
+        
 
     }
 }

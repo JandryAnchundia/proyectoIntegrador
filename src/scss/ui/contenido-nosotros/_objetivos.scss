@@ -2,6 +2,7 @@
 @use 'base/variables' as v;
 
 .contenedor-aticle{
+    overflow: hidden;
 
     width: 65%;
     margin: 0 auto;
@@ -11,18 +12,27 @@
 
     &__heading{
         text-align: center;
-        font-size: 5rem;
+        font-size: 3.5rem;
         font-family: v.$fuenteTerciaria;
         margin-bottom: 5rem;
+
+        @include m.tablet{
+            font-size: 5rem;
+
+        }
         
         
 
     }
 
     &__texto{
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         line-height: 2.5;
         font-family: v.$fuenteTerciaria;
+
+        @include m.tablet{
+            font-size: 1.8rem;
+        }
     }
 
 }
@@ -33,25 +43,42 @@
 
     &__heading{
         text-align: center;
-        font-size: 5rem;
+        font-size: 3rem;
         font-family: v.$fuenteTerciaria;
         margin-top: 5rem;
+
+        @include m.tablet{
+            font-size: 5rem;
+        }
     }
     &__subheading{
         text-align: center;
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 700;
         font-family: v.$fuenteTerciaria;
+
+        @include m.tablet{
+            font-size: 3rem;
+        }
     }
 
     &__ley{
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         font-family: v.$fuenteTerciaria;
         margin: 0 0 1rem;
+
+        @include m.tablet{
+            font-size: 1.8rem;
+        }
     }
 
     &__texto{
         line-height: 2;
+        font-size: 1.4rem;
+
+        @include m.tablet{
+            font-size: 1.6rem;
+        }
     }
 
 

@@ -2,7 +2,9 @@
 @use 'base/variables' as v;
 
 
+
 .lema{
+   
     &__contenido{ 
         min-height: 26rem;  
        
@@ -18,14 +20,21 @@
         
         text-align: center;
         
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-family: 'Cedarville Cursive', cursive;
         font-weight: bold;
         color:#000000 ;
         font-style: italic;
         position: relative; 
         margin: 0; 
-        margin-left: -30rem;
+ 
+     
+
+        @include m.tablet{
+
+            font-size: 4rem;
+            margin-left: -30rem;
+        }
         
         
         
@@ -38,7 +47,7 @@
 
         text-align: center;
 
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-family: 'Cedarville Cursive', cursive;
         font-weight: bold;
         color:#000000 ;
@@ -46,6 +55,11 @@
         
         padding: 0;
         margin: 0;
+
+        @include m.tablet{
+
+            font-size: 4rem;
+        }
        
 
         position: relative;
@@ -55,7 +69,7 @@
             &::after{
 
                 content: '';
-                background-image: url('../img/pluma-mano.png');
+                background-image: url('../imgOptimizadas/pluma-mano.png');
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;

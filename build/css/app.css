@@ -423,7 +423,7 @@ p {
   }
 }
 .header__logo {
-  width: 25rem;
+  width: 24rem;
 }
 
 .navegacion {
@@ -440,7 +440,7 @@ p {
   text-align: center;
   font-weight: 600;
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-family: "Raleway", sans-serif;
   text-transform: capitalize;
   padding: 1rem;
@@ -477,7 +477,7 @@ p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 30rem;
+  min-height: 45rem;
 }
 @media (min-width: 768px) {
   .slider__imagen1, .slider__imagen2, .slider__imagen3 {
@@ -492,13 +492,19 @@ p {
 }
 .slider__imagen3 {
   background-image: url(../img/vinculacion.svg);
-  background-position: center -150px;
+}
+@media (min-width: 768px) {
+  .slider__imagen3 {
+    background-image: url(../img/vinculacion.svg);
+    background-position: center -150px;
+  }
 }
 .slider__contenido {
   max-width: 50rem;
   margin: auto;
-  transform: translateY(3rem);
+  transform: translateY(9rem);
   text-align: center;
+  padding: 5rem;
 }
 @media (min-width: 768px) {
   .slider__contenido {
@@ -511,16 +517,26 @@ p {
 .slider__heading {
   color: #FFFFFF;
   text-transform: capitalize;
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   margin: 0;
 }
+@media (min-width: 768px) {
+  .slider__heading {
+    font-size: 5rem;
+  }
+}
 .slider__texto {
   color: #FFFFFF;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin: 0;
   font-family: "Raleway", sans-serif;
+}
+@media (min-width: 768px) {
+  .slider__texto {
+    font-size: 1.8rem;
+  }
 }
 
 /* Esto es lo que compete al slider Siguiente. Puntero */
@@ -549,24 +565,39 @@ p {
 }
 
 .contenido__parrafo {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-style: normal;
   color: #111111;
   font-family: "Raleway", sans-serif;
 }
+@media (min-width: 768px) {
+  .contenido__parrafo {
+    font-size: 2.4rem;
+  }
+}
 .contenido__parrafo--informacion {
   font-style: normal;
-  font-size: 5rem;
+  font-size: 2.6rem;
   color: #121212;
   font-family: "Raleway", sans-serif;
 }
+@media (min-width: 768px) {
+  .contenido__parrafo--informacion {
+    font-size: 5rem;
+  }
+}
 .contenido__heading {
   text-transform: capitalize;
-  font-size: 5.4rem;
+  font-size: 3.5rem;
   font-style: normal;
   color: #111111;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
+}
+@media (min-width: 768px) {
+  .contenido__heading {
+    font-size: 5rem;
+  }
 }
 
 .typed-cursor- {
@@ -638,8 +669,12 @@ p {
 .contenido__heading{
     color: black;
 } */
+.nosotros__grid {
+  overflow: hidden;
+}
 @media (min-width: 768px) {
   .nosotros__grid {
+    overflow: unset;
     display: grid;
     gap: 0rem;
     grid-template-columns: repeat(2, 1fr);
@@ -659,10 +694,10 @@ p {
 .nosotro--mision {
   position: relative;
   z-index: 1;
-  background-image: url(../img/mision-nosotro.jpg);
+  background-image: url(../imgOptimizadas/mision-nosotro.jpg);
 }
 .nosotro--vision {
-  background-image: url(../img/vision-nosotro.jpg);
+  background-image: url(../imgOptimizadas/vision-nosotro.jpg);
   background-position: top;
 }
 .nosotro__heading {
@@ -670,13 +705,23 @@ p {
   color: #FFFFFF;
   font-family: "Raleway", sans-serif;
   text-transform: capitalize;
-  font-size: 4rem;
+  font-size: 3.5rem;
+}
+@media (min-width: 768px) {
+  .nosotro__heading {
+    font-size: 4rem;
+  }
 }
 .nosotro__texto {
   margin-top: 1rem;
   color: #FFFFFF;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-family: "Raleway", sans-serif;
+}
+@media (min-width: 768px) {
+  .nosotro__texto {
+    font-size: 1.8rem;
+  }
 }
 
 .procesosSustantivos {
@@ -696,12 +741,18 @@ p {
   height: 55rem;
 }
 .proceso__heading {
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
   text-align: center;
   text-transform: capitalize;
-  margin-bottom: 5rem;
+  margin-bottom: 0rem;
+}
+@media (min-width: 768px) {
+  .proceso__heading {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+  }
 }
 
 .proceso:last-of-type {
@@ -719,8 +770,9 @@ p {
 }
 
 .basico {
-  background-image: url(../img/proceso_docencia.jpeg);
+  background-image: url(../imgOptimizadas/proceso_docencia.jpeg);
   background-size: cover;
+  background-position: -100px 200px;
   background-attachment: fixed;
 }
 
@@ -736,8 +788,9 @@ p {
   }
 }
 .premier {
-  background-image: url(../img/proceso_practica.jpeg);
+  background-image: url(../imgOptimizadas/proceso_practica.jpeg);
   background-attachment: fixed;
+  background-position: -150px 200px;
 }
 
 @media (min-width: 768px) {
@@ -752,9 +805,10 @@ p {
   }
 }
 .elite {
-  background-image: url(../img/proceso_vinculacion.jpeg);
+  background-image: url(../imgOptimizadas/proceso_vinculacion.jpeg);
   background-size: cover;
   background-attachment: fixed;
+  background-position: -100px 200px;
 }
 
 @media (min-width: 768px) {
@@ -789,12 +843,17 @@ p {
   gap: 1.5rem;
 }
 .galeria__heading {
-  font-size: 5rem;
+  font-size: 3.5rem;
   text-transform: capitalize;
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
   margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .galeria__heading {
+    font-size: 5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -853,6 +912,7 @@ p {
   padding: 1rem;
 }
 .footer__texto {
+  font-size: 1.2rem;
   margin: 0;
   color: #FFFFFF;
 }
@@ -875,22 +935,30 @@ p {
   background-color: #44434D;
 }
 .nosotro__contenido-right {
-  display: grid;
-  gap: 0rem;
-  grid-template-columns: repeat(3, 1fr);
+  padding: 4rem;
 }
-.nosotro__contenido-right::after {
-  content: "";
-  background-image: url(../img/ejecutivo.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0rem center;
-  display: block;
-  width: 30rem;
-  height: 40rem;
-  grid-row: 1/1;
-  grid-column: 1/2;
-  margin: -10rem 0 0 0;
+@media (min-width: 768px) {
+  .nosotro__contenido-right {
+    display: grid;
+    gap: 0rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  .nosotro__contenido-right::after {
+    content: "";
+    background-image: url(../imgOptimizadas/ejecutivo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0rem center;
+    display: block;
+    width: 30rem;
+    height: 40rem;
+    grid-row: 1/1;
+    grid-column: 1/2;
+    margin: -10rem 0 0 0;
+  }
 }
 .nosotro__descripcion-right {
   display: flex;
@@ -901,26 +969,32 @@ p {
   padding-right: 3rem;
 }
 .nosotro__contenido-left {
+  padding: 4rem;
   display: grid;
   gap: 0rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
-.nosotro__contenido-left::after {
-  content: "";
-  background-image: url(../img/ejecutiva.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: -10rem 3rem;
-  display: block;
-  width: 30rem;
-  height: 40rem;
-  grid-row: 1/1;
-  grid-column: 3/4;
-  margin: -10rem 0 0 0rem;
+@media (min-width: 768px) {
+  .nosotro__contenido-left {
+    display: grid;
+    gap: 0rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+  }
 }
 @media (min-width: 768px) {
   .nosotro__contenido-left::after {
-    background-position: -10rem 5rem;
+    content: "";
+    background-image: url(../imgOptimizadas/ejecutiva.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -10rem 3rem;
+    display: block;
+    width: 30rem;
+    height: 40rem;
+    grid-row: 1/1;
+    grid-column: 3/4;
+    margin: -10rem 0 0 0rem;
   }
 }
 .nosotro__descripcion-left {
@@ -933,6 +1007,22 @@ p {
 .nosotro__heading-right, .nosotro__texto-right {
   color: #FFFFFF;
   font-family: "Raleway", sans-serif;
+}
+.nosotro__heading-right, .nosotro__heading-left {
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .nosotro__heading-right, .nosotro__heading-left {
+    font-size: 3.5rem;
+  }
+}
+.nosotro__texto-right, .nosotro__texto-left {
+  font-size: 1.4rem;
+}
+@media (min-width: 768px) {
+  .nosotro__texto-right, .nosotro__texto-left {
+    font-size: 1.5rem;
+  }
 }
 .nosotro__heading-left, .nosotro__texto-left {
   color: #FFFFFF;
@@ -950,21 +1040,38 @@ p {
   max-width: 70rem;
   height: 20rem;
   margin: 0 auto;
-  transform: translateY(7rem);
   text-align: center;
+  padding: 5rem;
+}
+@media (min-width: 768px) {
+  .header__contenido {
+    min-width: 75rem;
+    margin: auto;
+    text-align: center;
+  }
 }
 
 .contenido__heading-nosotros {
   color: #FFFFFF;
   font-style: normal;
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-family: "Raleway", sans-serif;
+}
+@media (min-width: 768px) {
+  .contenido__heading-nosotros {
+    font-size: 5rem;
+  }
 }
 .contenido__parrafo--informacion-nosotros {
   color: #FFFFFF;
   font-style: normal;
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: "Raleway", sans-serif;
+}
+@media (min-width: 768px) {
+  .contenido__parrafo--informacion-nosotros {
+    font-size: 2.5rem;
+  }
 }
 
 .lema__contenido {
@@ -975,18 +1082,23 @@ p {
 }
 .lema__uleam {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-family: "Cedarville Cursive", cursive;
   font-weight: bold;
   color: #000000;
   font-style: italic;
   position: relative;
   margin: 0;
-  margin-left: -30rem;
+}
+@media (min-width: 768px) {
+  .lema__uleam {
+    font-size: 4rem;
+    margin-left: -30rem;
+  }
 }
 .lema__uleamSpan {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-family: "Cedarville Cursive", cursive;
   font-weight: bold;
   color: #000000;
@@ -996,9 +1108,14 @@ p {
   position: relative;
 }
 @media (min-width: 768px) {
+  .lema__uleamSpan {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 768px) {
   .lema__uleamSpan::after {
     content: "";
-    background-image: url("../img/pluma-mano.png");
+    background-image: url("../imgOptimizadas/pluma-mano.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1011,41 +1128,73 @@ p {
 }
 
 .contenedor-aticle {
+  overflow: hidden;
   width: 65%;
   margin: 0 auto;
 }
 
 .objetivos__heading {
   text-align: center;
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-family: "Raleway", sans-serif;
   margin-bottom: 5rem;
 }
+@media (min-width: 768px) {
+  .objetivos__heading {
+    font-size: 5rem;
+  }
+}
 .objetivos__texto {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   line-height: 2.5;
   font-family: "Raleway", sans-serif;
+}
+@media (min-width: 768px) {
+  .objetivos__texto {
+    font-size: 1.8rem;
+  }
 }
 
 .historia__heading {
   text-align: center;
-  font-size: 5rem;
+  font-size: 3rem;
   font-family: "Raleway", sans-serif;
   margin-top: 5rem;
 }
+@media (min-width: 768px) {
+  .historia__heading {
+    font-size: 5rem;
+  }
+}
 .historia__subheading {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
 }
+@media (min-width: 768px) {
+  .historia__subheading {
+    font-size: 3rem;
+  }
+}
 .historia__ley {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-family: "Raleway", sans-serif;
   margin: 0 0 1rem;
 }
+@media (min-width: 768px) {
+  .historia__ley {
+    font-size: 1.8rem;
+  }
+}
 .historia__texto {
   line-height: 2;
+  font-size: 1.4rem;
+}
+@media (min-width: 768px) {
+  .historia__texto {
+    font-size: 1.6rem;
+  }
 }
 
 .contenedor-contacto {
@@ -1054,21 +1203,38 @@ p {
 }
 
 .header__contacto {
-  background-image: url(../img/contact-header.jpg);
+  background-image: url(../imgOptimizadas/contact-header.jpg);
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: -720px 20px;
   background-size: cover;
   padding: 12rem 0;
   min-height: 49rem;
 }
+@media (min-width: 768px) {
+  .header__contacto {
+    background-position: center bottom;
+  }
+}
 .header__contenido-contacto {
-  max-width: 60rem;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
   padding-left: 7rem;
+  transform: translateY(155px);
+}
+@media (min-width: 768px) {
+  .header__contenido-contacto {
+    max-width: 50rem;
+    padding-left: 7rem;
+    text-align: unset;
+    transform: unset;
+    margin: 0;
+  }
 }
 
 /* Formulario */
 .contacto {
-  background-image: url(../img/contact-bg.jpg);
+  background-image: url(../imgOptimizadas/contact-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -1166,19 +1332,36 @@ p {
   }
 }
 .info__imagen {
-  max-width: 7.5rem;
+  max-width: 5.5rem;
+  padding-bottom: 2rem;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .info__imagen {
+    max-width: 7.5rem;
+    padding-bottom: 1rem;
+  }
 }
 .info__heading {
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   margin: 0;
 }
+@media (min-width: 768px) {
+  .info__heading {
+    font-size: 2.4rem;
+  }
+}
 .info__texto {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .info__texto {
+    font-size: 2rem;
+  }
 }
 .info__grid {
   display: grid;
@@ -1194,7 +1377,12 @@ p {
 }
 .info__contenido {
   background-color: #ffffff;
-  padding: 2rem 5rem;
+  padding: 5rem 5rem;
+  transition-property: all;
+  transition-duration: 300ms;
+}
+.info__contenido:hover {
+  transform: scale(1.05);
 }
 @media (min-width: 768px) {
   .info__contenido {
@@ -1213,9 +1401,14 @@ p {
 .ubicacion__heading {
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-weight: 900;
   margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .ubicacion__heading {
+    font-size: 5rem;
+  }
 }
 .ubicacion__iframe {
   width: 100%;
@@ -1223,7 +1416,7 @@ p {
 }
 
 .header__proceso {
-  background-image: linear-gradient(to bottom, hsla(0deg, 0%, 0%, 0.068), hsla(0deg, 0%, 0%, 0.678) 100%), url(../img/proceso-h.jpg);
+  background-image: linear-gradient(to bottom, hsla(0deg, 0%, 0%, 0.068), hsla(0deg, 0%, 0%, 0.678) 100%), url(../imgOptimizadas/proceso-h.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -1232,13 +1425,70 @@ p {
 }
 .header__proceso-contenido {
   max-width: 80rem;
-  padding-left: 7rem;
+  padding: 4rem;
   margin: 0 auto;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .header__proceso-contenido {
+    max-width: 80rem;
+  }
+}
+
+.finca {
+  overflow: hidden;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #eff6f8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+}
+.finca__bienvenido {
+  display: none;
+}
+@media (min-width: 768px) {
+  .finca__bienvenido {
+    display: block;
+    position: absolute;
+    right: -40px;
+    top: 0px;
+    width: 42rem;
+    height: 50rem;
+  }
+}
+.finca__bienvenidoImagen {
+  width: 100%;
+  width: 100%;
+}
+.finca__contenedor {
+  display: grid;
+}
+@media (min-width: 768px) {
+  .finca__contenedor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.finca__video1 {
+  width: 100%;
+  height: 100%;
+}
+.finca__imagen1 {
+  display: none;
+}
+@media (min-width: 768px) {
+  .finca__imagen1 {
+    display: block;
+    width: 60rem;
+    height: 40rem;
+    transform: translateX(-7rem);
+  }
 }
 
 .main-proceso {
   margin-top: 5rem;
+  overflow: hidden;
 }
 
 .proceso-sustantivo {
