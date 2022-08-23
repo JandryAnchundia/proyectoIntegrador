@@ -485,18 +485,18 @@ p {
   }
 }
 .slider__imagen1 {
-  background-image: url(../img/docencia.svg);
+  background-image: url(../img/docencia.jpg);
 }
 .slider__imagen2 {
-  background-image: url(../img/practica.svg);
+  background-image: url(../img/practica.jpg);
 }
 .slider__imagen3 {
-  background-image: url(../img/vinculacion.svg);
+  background-image: url(../img/vinculacion.jpg);
 }
 @media (min-width: 768px) {
   .slider__imagen3 {
-    background-image: url(../img/vinculacion.svg);
-    background-position: center -150px;
+    background-image: url(../img/vinculacion.jpg);
+    background-position: center -60px;
   }
 }
 .slider__contenido {
@@ -694,10 +694,10 @@ p {
 .nosotro--mision {
   position: relative;
   z-index: 1;
-  background-image: url(../imgOptimizadas/mision-nosotro.jpg);
+  background-image: url(../img/mision-nosotro.jpg);
 }
 .nosotro--vision {
-  background-image: url(../imgOptimizadas/vision-nosotro.jpg);
+  background-image: url(../img/vision-nosotro.jpg);
   background-position: top;
 }
 .nosotro__heading {
@@ -770,9 +770,10 @@ p {
 }
 
 .basico {
-  background-image: url(../imgOptimizadas/proceso_docencia.jpeg);
+  background-image: url(../img/proceso_docencia.jpg);
   background-size: cover;
-  background-position: -100px 200px;
+  height: 80rem;
+  background-position: center 250px;
   background-attachment: fixed;
 }
 
@@ -780,6 +781,7 @@ p {
   .basico {
     background-position: center right;
     background-attachment: unset;
+    height: 59rem;
   }
 
   .basico .contenido-proceso {
@@ -788,15 +790,17 @@ p {
   }
 }
 .premier {
-  background-image: url(../imgOptimizadas/proceso_practica.jpeg);
-  background-attachment: fixed;
-  background-position: -150px 200px;
+  background-image: url(../img/proceso_practica.jpg);
+  background-size: cover;
+  height: 80rem;
+  background-position: center 250px;
 }
 
 @media (min-width: 768px) {
   .premier {
     background-position: center -50px;
     background-attachment: unset;
+    height: 59rem;
   }
 
   .premier .contenido-proceso {
@@ -805,16 +809,17 @@ p {
   }
 }
 .elite {
-  background-image: url(../imgOptimizadas/proceso_vinculacion.jpeg);
+  background-image: url(../img/proceso_vinculacion.jpg);
   background-size: cover;
-  background-attachment: fixed;
-  background-position: -100px 200px;
+  height: 80rem;
+  background-position: center 250px;
 }
 
 @media (min-width: 768px) {
   .elite {
     background-position: bottom left;
     background-attachment: unset;
+    height: 59rem;
   }
 
   .elite .contenido-proceso {
@@ -900,7 +905,7 @@ p {
 }
 .footer {
   margin-top: 5rem;
-  background-image: url(../img/header.svg);
+  background-image: url(../img/practica.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -948,7 +953,7 @@ p {
 @media (min-width: 768px) {
   .nosotro__contenido-right::after {
     content: "";
-    background-image: url(../imgOptimizadas/ejecutivo.png);
+    background-image: url(../img/ejecutivo.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0rem center;
@@ -985,7 +990,7 @@ p {
 @media (min-width: 768px) {
   .nosotro__contenido-left::after {
     content: "";
-    background-image: url(../imgOptimizadas/ejecutiva.png);
+    background-image: url(../img/ejecutiva.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -10rem 3rem;
@@ -1030,7 +1035,7 @@ p {
 }
 
 .header__imagen {
-  background-image: url(../img/header_nosotros.svg);
+  background-image: url(../img/header_nosotros.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1115,7 +1120,7 @@ p {
 @media (min-width: 768px) {
   .lema__uleamSpan::after {
     content: "";
-    background-image: url("../imgOptimizadas/pluma-mano.png");
+    background-image: url("../img/pluma-mano.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1203,7 +1208,7 @@ p {
 }
 
 .header__contacto {
-  background-image: url(../imgOptimizadas/contact-header.jpg);
+  background-image: url(../img/contact-header.jpg);
   background-repeat: no-repeat;
   background-position: -720px 20px;
   background-size: cover;
@@ -1234,7 +1239,7 @@ p {
 
 /* Formulario */
 .contacto {
-  background-image: url(../imgOptimizadas/contact-bg.jpg);
+  background-image: url(../img/contact-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -1416,9 +1421,9 @@ p {
 }
 
 .header__proceso {
-  background-image: linear-gradient(to bottom, hsla(0deg, 0%, 0%, 0.068), hsla(0deg, 0%, 0%, 0.678) 100%), url(../imgOptimizadas/proceso-h.jpg);
+  background-image: linear-gradient(to bottom, hsla(0deg, 0%, 0%, 0.068), hsla(0deg, 0%, 0%, 0.678) 100%), url(../img/header-proceso.jpg);
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center center;
   background-size: cover;
   padding: 12rem 0;
   min-height: 49rem;
@@ -1437,58 +1442,31 @@ p {
 
 .finca {
   overflow: hidden;
-  padding-top: 4rem;
-  background-image: url(../imgOptimizadas/fondo-proc.jpg);
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-image: url(../img/madera.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
-  position: relative;
+  background-position: center center;
+  background-attachment: fixed;
 }
-.finca__bienvenido {
-  display: none;
-}
-@media (min-width: 768px) {
-  .finca__bienvenido {
-    display: block;
-    position: absolute;
-    right: -40px;
-    top: 0px;
-    width: 42rem;
-    height: 50rem;
-  }
-}
-.finca__bienvenidoImagen {
-  width: 100%;
-  width: 100%;
-}
-.finca__contenedor {
-  display: grid;
-}
-@media (min-width: 768px) {
-  .finca__contenedor {
-    align-items: center;
-    grid-template-columns: repeat(2, 1fr);
-  }
+.finca__video {
+  display: block;
+  margin: auto;
+  max-width: 80rem;
 }
 .finca__video1 {
   width: 100%;
-  height: 100%;
-}
-.finca__imagen1 {
-  overflow: hidden;
-  display: none;
-}
-@media (min-width: 768px) {
-  .finca__imagen1 {
-    display: block;
-    width: 60rem;
-    height: 40rem;
-    transform: translateX(-7rem);
-  }
 }
 
 .proceso__heading--color {
   color: rgb(65, 14, 14);
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .proceso__heading--color {
+    margin-bottom: 4rem;
+  }
 }
 
 .main-proceso {

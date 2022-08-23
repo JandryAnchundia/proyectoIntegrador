@@ -32,7 +32,7 @@
     }
 
     &__imagen1{
-        background-image: url(../img/docencia.svg);
+        background-image: url(../img/docencia.jpg);
 
         
       
@@ -40,24 +40,20 @@
 
 
     &__imagen2{
-        background-image: url(../img/practica.svg);
+        background-image: url(../img/practica.jpg);
       
 
     }
 
     &__imagen3{
-        background-image: url(../img/vinculacion.svg);
-      
-
-
-        
+       background-image: url(../img/vinculacion.jpg);   
     }
 
     @include m.tablet{
 
         &__imagen3{
-            background-image: url(../img/vinculacion.svg);
-            background-position: center -150px;
+            background-image: url(../img/vinculacion.jpg);
+            background-position: center -60px;
     
     
             

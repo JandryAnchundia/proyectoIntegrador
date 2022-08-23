@@ -4,12 +4,13 @@
 .header{
 
     &__proceso{   
-        background-image:  linear-gradient(to bottom, hsla(0, 0%, 0%, 0.068),  hsla(0, 0%, 0%, 0.678) 100%),  url(../imgOptimizadas/proceso-h.jpg);
+        background-image:  linear-gradient(to bottom, hsla(0, 0%, 0%, 0.068),  hsla(0, 0%, 0%, 0.678) 100%),  url(../img/header-proceso.jpg);
         background-repeat: no-repeat;
-        background-position:  center  bottom;
+        background-position:  center  center;
         background-size: cover ;
         padding: 12rem 0;
         min-height: 49rem;
+   
     }
         
     &__proceso-contenido{
@@ -31,75 +32,37 @@
 
 .finca{
     overflow: hidden;
-    padding-top: 4rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+
     
 
-    background-image: url(../imgOptimizadas/fondo-proc.jpg);
+    background-image: url(../img/madera.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
-    position: relative;
-  
-
-    &__bienvenido{
-        display: none;
+    background-position: center center;
+    background-attachment: fixed;
+    
+    
 
 
-        @include m.tablet{
-            display: block;
-            position: absolute;
-            right: -40px;
-            top: 0px;
-            width: 42rem;
-            height: 50rem;
+    &__video{
+       
+        display: block;
+        margin: auto;
+        max-width: 80rem;
 
-        }
+       
+
+       
     }
-
-    &__bienvenidoImagen{
-        width: 100%;
-        width: 100%;
-
-
-    }
-   
-
-
-    &__contenedor{
-      display: grid;
-     
-
-      @include m.tablet{
-
-        align-items: center;
-
-        grid-template-columns: repeat(2, 1fr) ;
-      }
-    }
+    
 
   
-
     &__video1{
-        width: 100%;
-        height: 100%;
+      width: 100%;
 
     }
-
-
-    &__imagen1{
-        overflow: hidden;
-        
-        display: none;
-        @include m.tablet{
-            display: block;
-            
-            width: 60rem;
-            height: 40rem;
-            transform: translateX(-7rem);
-            }
-    }
-
-
 
 }
 
@@ -107,6 +70,12 @@
 
 .proceso__heading--color{
     color: rgb(65, 14, 14);
+
+    margin-bottom: 2rem ;
+
+    @include m.tablet{
+        margin-bottom: 4rem;
+    }
     
 }
 
