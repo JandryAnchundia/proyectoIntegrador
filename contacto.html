@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universidad ULEAM</title>
+    <title>Finca Tigrillo ULEAM</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
@@ -30,7 +30,7 @@
 
             <a href="index.html">
                 <div class="header__logo">
-                    <img loading="lazy" src="build/imgOptimizadas/logo_uleam.png" alt="">
+                    <img  src="build/imgOptimizadas/logo_uleam.png" alt="">
                 </div>
             </a>
 
@@ -79,28 +79,28 @@
 
     <div class="contacto__grid contenedor-contacto">
 
-        <form class="formulario" data-aos="zoom-in-left">
+        <form method="post" action="enviarcorreo.php" class="formulario" data-aos="zoom-in-left">
 
                 <h2 class="formulario__heading">Mensaje</h2>
                 
                 <div class="formulario__campo">
-                    <input  id="nombre" type="text" placeholder="Ingrese su nombre y apellido" required>
+                    <input name="nombre"   id="nombre" type="text" placeholder="Ingrese su nombre y apellido" required>
                 </div>
         
                 
         
                 <div class="formulario__campo">                
-                    <input id="email" type="email" placeholder="Ingrese su Email" >
+                    <input name="email" id="email" type="email" placeholder="Ingrese su Email" >
                 </div>
         
                 <div class="formulario__campo">  
-                    <input id="tel" type="tel" placeholder="Ingrese su Teléfono" >
+                    <input name="telefono"  id="tel" type="tel" placeholder="Ingrese su Teléfono" >
                 </div>
         
                 <div class="formulario__campo">
-                    <textarea rows="10" cols="20"></textarea>
+                    <textarea name="mensaje"  rows="10" cols="20"></textarea>
 
-                    <a class="formulario__boton" href="#">Enviar</a>
+                    <button type="submit" class="formulario__boton" href="#">Enviar</button>
                 </div>
 
 
@@ -239,9 +239,9 @@
         </div>
 
         <div class="footer__copyright">
-            <p class="footer__texto">ULEAM © Copyright 2020, Todos los derechos reservados - Universidad Laica Eloy Alfaro de Manabí</p>
-            <p class="footer__texto">Dirección: Av. Circunvalación - Vía a San Mateo</p>
-            <p class="footer__texto">Manta - Manabí - Ecuador</p>
+            <p class="footer__texto">ULEAM © Copyright 2022, Todos los derechos reservados - Universidad Laica Eloy Alfaro de Manabí</p>
+            <p class="footer__texto">Dirección: Av. Marcos Aray Dueñas - Chone</p>
+            <p class="footer__texto">Chone - Manabí - Ecuador</p>
         </div>
     </footer>
 

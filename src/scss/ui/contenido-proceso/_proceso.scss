@@ -31,15 +31,15 @@
 
 .finca{
     overflow: hidden;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-   
+    padding-top: 4rem;
+    
 
-    background-color:  #eff6f8;
+    background-image: url(../imgOptimizadas/fondo-proc.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
     position: relative;
+  
 
     &__bienvenido{
         display: none;
@@ -71,7 +71,9 @@
 
       @include m.tablet{
 
-        grid-template-columns: repeat(2,1fr) ;
+        align-items: center;
+
+        grid-template-columns: repeat(2, 1fr) ;
       }
     }
 
@@ -85,6 +87,7 @@
 
 
     &__imagen1{
+        overflow: hidden;
         
         display: none;
         @include m.tablet{
@@ -99,6 +102,15 @@
 
 
 }
+
+
+
+.proceso__heading--color{
+    color: rgb(65, 14, 14);
+    
+}
+
+
 
 
 
@@ -119,6 +131,9 @@
 
 
 .proceso-sustantivo {
+
+    overflow: hidden;
+    
     margin-bottom: v.$separacion;
     @include m.tablet { 
         display: flex;

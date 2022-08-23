@@ -1219,7 +1219,7 @@ p {
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding-left: 7rem;
+  padding: 4rem;
   transform: translateY(155px);
 }
 @media (min-width: 768px) {
@@ -1437,9 +1437,8 @@ p {
 
 .finca {
   overflow: hidden;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: #eff6f8;
+  padding-top: 4rem;
+  background-image: url(../imgOptimizadas/fondo-proc.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -1467,6 +1466,7 @@ p {
 }
 @media (min-width: 768px) {
   .finca__contenedor {
+    align-items: center;
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -1475,6 +1475,7 @@ p {
   height: 100%;
 }
 .finca__imagen1 {
+  overflow: hidden;
   display: none;
 }
 @media (min-width: 768px) {
@@ -1486,12 +1487,17 @@ p {
   }
 }
 
+.proceso__heading--color {
+  color: rgb(65, 14, 14);
+}
+
 .main-proceso {
   margin-top: 5rem;
   overflow: hidden;
 }
 
 .proceso-sustantivo {
+  overflow: hidden;
   margin-bottom: 5rem;
 }
 @media (min-width: 768px) {
